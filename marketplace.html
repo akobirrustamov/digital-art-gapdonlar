@@ -1,97 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
-
+  <body>
     <div class="bg-[#2B2B2B]">
-        <div class="lg:max-w-7xl md:max-w-2xl max-w-2xs m-auto">
-            <div class="flex justify-between items-center py-10">
-                <div>
-                    <img src="./images/Logo (6).png" alt="">
-                </div>
+      <div class="lg:max-w-7xl md:max-w-2xl max-w-2xs m-auto">
+        <div class="flex justify-between items-center py-10">
+          <div>
+            <img src="./images/Logo (6).png" alt="" />
+          </div>
 
-                <div class="lg:block md:hidden hidden">
-                    <ul class="flex gap-10 items-center">
-                        <li class="text-[#FFFFFF] font-semibold text-base">
-                            <a href="#">Marketplace</a>
-                        </li>
-                        <li class="text-[#FFFFFF] font-semibold text-base">
-                            <a href="#">Rankings</a>
-                        </li>
-                        <li class="text-[#FFFFFF] font-semibold text-base">
-                            <a href="#">Connect a wallet</a>
-                        </li>
-                        <button
-                            class="bg-[#A259FF] py-4 px-8 rounded-xl text-[#FFFFFF] hover:text-[#A259FF] hover:bg-[#FFFFFF]">
-                            <i class="fa-regular fa-user"></i>
-                            Sign Up
-                        </button>
-                    </ul>
-                </div>
+          <div class="lg:block md:hidden hidden">
+            <ul class="flex gap-10 items-center">
+              <li class="text-[#FFFFFF] font-semibold text-base">
+                <a href="#">Marketplace</a>
+              </li>
+              <li class="text-[#FFFFFF] font-semibold text-base">
+                <a href="#">Rankings</a>
+              </li>
+              <li class="text-[#FFFFFF] font-semibold text-base">
+                <a href="#">Connect a wallet</a>
+              </li>
+              <button
+                class="bg-[#A259FF] py-4 px-8 rounded-xl text-[#FFFFFF] hover:text-[#A259FF] hover:bg-[#FFFFFF]"
+              >
+                <i class="fa-regular fa-user"></i>
+                Sign Up
+              </button>
+            </ul>
+          </div>
 
-                <div class="lg:hidden md:block block">
-                    <i class="fa-solid fa-bars-staggered text-[#FFFFFF]"></i>
-                </div>
+          <div class="lg:hidden md:block block">
+            <i class="fa-solid fa-bars-staggered text-[#FFFFFF]"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:max-w-6xl md:max-w-2xl max-w-2xs m-auto">
+        <div>
+          <div>
+            <h1
+              class="font-semibold lg:text-5xl md:text-4xl text-3xl text-[#FFFFFF]"
+            >
+              Browse Marketplace
+            </h1>
+            <p
+              class="font-normal lg:text-xl md:text-base text-base pt-5 pb-10 text-[#FFFFFF]"
+            >
+              Browse through more than 50k NFTs on the NFT Marketplace.
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-between border-1 border-[#3B3B3B] py-4 px-5 rounded-xl"
+          >
+            <input
+              type="text"
+              placeholder="Search your favourite NFTs"
+              class="font-normal text-base text-[#858584]"
+            />
+            <i class="fa-solid fa-magnifying-glass text-xl text-[#FFFFFF]"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-15 pb-5">
+        <div class="h-0.5 w-full bg-[#3B3B3B]"></div>
+      </div>
+
+      <div class="lg:max-w-4xl md:max-w-2xl max-w-2xs m-auto">
+        <div class="flex lg:justify-between md:justify-between gap-10">
+          <div>
+            <div class="flex gap-5 items-center md:pl-15 pl-10 pb-3">
+              <h4
+                class="font-semibold text-xl text-[#858584] hover:text-[#FFFFFF]"
+              >
+                NFTs
+              </h4>
+              <p
+                class="md:block hidden bg-[#3B3B3B] hover:bg-[#858584] w-9 h-9 pl-1 pt-1.5 rounded-full font-normal text-base text-[#FFFFFF]"
+              >
+                302
+              </p>
             </div>
-        </div>
+            <div class="h-1 md:w-60 w-30 bg-[#858584]"></div>
+          </div>
 
-
-        <div class="lg:max-w-6xl md:max-w-2xl max-w-2xs m-auto">
-            <div>
-                <div>
-                    <h1 class="font-semibold lg:text-5xl md:text-4xl text-3xl text-[#FFFFFF]">Browse Marketplace</h1>
-                    <p class="font-normal lg:text-xl md:text-base text-base pt-5 pb-10 text-[#FFFFFF]">Browse through
-                        more than 50k NFTs on the NFT Marketplace.</p>
-                </div>
-                <div class="flex items-center justify-between border-1 border-[#3B3B3B] py-4 px-5 rounded-xl">
-                    <input type="text" placeholder="Search your favourite NFTs"
-                        class="font-normal text-base text-[#858584]">
-                    <i class="fa-solid fa-magnifying-glass text-xl text-[#FFFFFF]"></i>
-                </div>
+          <div>
+            <div class="flex gap-5 items-center md:pl-10 pl-2 pb-3">
+              <h4
+                class="font-semibold text-xl text-[#858584] hover:text-[#FFFFFF]"
+              >
+                Collections
+              </h4>
+              <p
+                class="md:block hidden bg-[#3B3B3B] hover:bg-[#858584] w-9 h-9 pl-2.5 pt-1.5 rounded-full font-normal text-base text-[#FFFFFF]"
+              >
+                67
+              </p>
             </div>
+            <div class="h-1 md:w-60 w-30 bg-[#858584]"></div>
+          </div>
         </div>
-
-        <div class="pt-15 pb-5">
-            <div class="h-0.5 w-full bg-[#3B3B3B]"></div>
-        </div>
-
-
-        <div class="lg:max-w-4xl md:max-w-2xl max-w-2xs m-auto">
-            <div class="flex lg:justify-between md:justify-between gap-10">
-                <div>
-                    <div class="flex gap-5 items-center md:pl-15 pl-10 pb-3">
-                    <h4 class="font-semibold text-xl text-[#858584] hover:text-[#FFFFFF]">NFTs</h4>
-                    <p class="md:block hidden bg-[#3B3B3B] hover:bg-[#858584] w-9 h-9 pl-1 pt-1.5 rounded-full font-normal text-base text-[#FFFFFF]">302</p>
-                </div>
-                <div class="h-1 md:w-60 w-30 bg-[#858584]"></div>
-                </div>
-
-                <div>
-                    <div class="flex gap-5 items-center md:pl-10 pl-2 pb-3">
-                    <h4 class="font-semibold text-xl text-[#858584] hover:text-[#FFFFFF]">Collections</h4>
-                    <p class="md:block hidden bg-[#3B3B3B] hover:bg-[#858584] w-9 h-9 pl-2.5 pt-1.5 rounded-full font-normal text-base text-[#FFFFFF]">67</p>
-                </div>
-                <div class="h-1 md:w-60 w-30 bg-[#858584]"></div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-
-
 
     <div class="bg-[#3B3B3B]">
       <div class="lg:max-w-7xl md:max-w-2xl max-w-2xs m-auto">
-        <div class="lg:flex md:grid md:grid-cols-2 md:gap-5 py-10 justify-between">
+        <div
+          class="lg:flex md:grid md:grid-cols-2 md:gap-5 py-10 justify-between"
+        >
           <div class="bg-[#2B2B2B] rounded-2xl">
             <img src="./images/Image Placeholder 10.png" alt="" class="w-90" />
             <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
@@ -114,7 +143,11 @@
           </div>
 
           <div class="bg-[#2B2B2B] rounded-2xl md:mt-0 mt-5">
-            <img src="./images/Image Placeholder 11 (1).png" alt="" class="w-90" />
+            <img
+              src="./images/Image Placeholder 11 (1).png"
+              alt=""
+              class="w-90"
+            />
             <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
               Distant Galaxy
             </h3>
@@ -135,7 +168,11 @@
           </div>
 
           <div class="bg-[#2B2B2B] rounded-2xl md:mt-0 mt-5">
-            <img src="./images/Image Placeholder (12).png" alt="" class="w-90" />
+            <img
+              src="./images/Image Placeholder (12).png"
+              alt=""
+              class="w-90"
+            />
             <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
               Distant Galaxy
             </h3>
@@ -155,75 +192,12 @@
             </div>
           </div>
 
-           <div class="lg:hidden md:block hidden bg-[#2B2B2B] rounded-2xl">
-            <img src="./images/Image Placeholder (13).png" alt="" class="w-90" />
-            <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
-              Distant Galaxy
-            </h3>
-            <div class="flex gap-5 py-2 px-5">
-              <img src="./images/Avatar (1).png" alt="" />
-              <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
-            </div>
-            <div class="flex gap-35 py-2">
-              <div class="px-5">
-                <p class="font-normal text-xs text-[#858584]">Price</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
-              </div>
-              <div>
-                <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">0.33 wETH</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-
-       <div class="md:block block">
-
-    <div class="lg:flex md:grid md:grid-cols-2 gap-5 md:py-10 justify-between">
-          <div class="lg:block md:hidden block bg-[#2B2B2B] rounded-2xl">
-            <img src="./images/Image Placeholder (13).png" alt="" class="w-90" />
-            <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
-              Distant Galaxy
-            </h3>
-            <div class="flex gap-5 py-2 px-5">
-              <img src="./images/Avatar (1).png" alt="" />
-              <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
-            </div>
-            <div class="flex gap-35 py-2">
-              <div class="px-5">
-                <p class="font-normal text-xs text-[#858584]">Price</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
-              </div>
-              <div>
-                <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">0.33 wETH</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-[#2B2B2B] rounded-2xl my-5">
-            <img src="./images/Image Placeholder (14).png" alt="" class="w-90" />
-            <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
-              Distant Galaxy
-            </h3>
-            <div class="flex gap-5 py-2 px-5">
-              <img src="./images/Avatar (1).png" alt="" />
-              <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
-            </div>
-            <div class="flex gap-35 py-2">
-              <div class="px-5">
-                <p class="font-normal text-xs text-[#858584]">Price</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
-              </div>
-              <div>
-                <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">0.33 wETH</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-[#2B2B2B] rounded-2xl md:block hidden">
-            <img src="./images/Image Placeholder (8).png" alt="" class="w-90" />
+          <div class="lg:hidden md:block hidden bg-[#2B2B2B] rounded-2xl">
+            <img
+              src="./images/Image Placeholder (13).png"
+              alt=""
+              class="w-90"
+            />
             <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
               Distant Galaxy
             </h3>
@@ -244,151 +218,268 @@
           </div>
         </div>
 
-       </div>
+        <div class="md:block block">
+          <div
+            class="lg:flex md:grid md:grid-cols-2 gap-5 md:py-10 justify-between"
+          >
+            <div class="lg:block md:hidden block bg-[#2B2B2B] rounded-2xl">
+              <img
+                src="./images/Image Placeholder (13).png"
+                alt=""
+                class="w-90"
+              />
+              <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
+                Distant Galaxy
+              </h3>
+              <div class="flex gap-5 py-2 px-5">
+                <img src="./images/Avatar (1).png" alt="" />
+                <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
+              </div>
+              <div class="flex gap-35 py-2">
+                <div class="px-5">
+                  <p class="font-normal text-xs text-[#858584]">Price</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
+                </div>
+                <div>
+                  <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">
+                    0.33 wETH
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#2B2B2B] rounded-2xl my-5">
+              <img
+                src="./images/Image Placeholder (14).png"
+                alt=""
+                class="w-90"
+              />
+              <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
+                Distant Galaxy
+              </h3>
+              <div class="flex gap-5 py-2 px-5">
+                <img src="./images/Avatar (1).png" alt="" />
+                <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
+              </div>
+              <div class="flex gap-35 py-2">
+                <div class="px-5">
+                  <p class="font-normal text-xs text-[#858584]">Price</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
+                </div>
+                <div>
+                  <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">
+                    0.33 wETH
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#2B2B2B] rounded-2xl md:block hidden">
+              <img
+                src="./images/Image Placeholder (8).png"
+                alt=""
+                class="w-90"
+              />
+              <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
+                Distant Galaxy
+              </h3>
+              <div class="flex gap-5 py-2 px-5">
+                <img src="./images/Avatar (1).png" alt="" />
+                <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
+              </div>
+              <div class="flex gap-35 py-2">
+                <div class="px-5">
+                  <p class="font-normal text-xs text-[#858584]">Price</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
+                </div>
+                <div>
+                  <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">
+                    0.33 wETH
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="lg:block md:block hidden">
+          <div
+            class="lg:flex md:grid md:grid-cols-2 gap-5 py-10 justify-between"
+          >
+            <div class="bg-[#2B2B2B] rounded-2xl">
+              <img
+                src="./images/Image Placeholder (7).png"
+                alt=""
+                class="w-90"
+              />
+              <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
+                Distant Galaxy
+              </h3>
+              <div class="flex gap-5 py-2 px-5">
+                <img src="./images/Avatar (1).png" alt="" />
+                <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
+              </div>
+              <div class="flex gap-35 py-2">
+                <div class="px-5">
+                  <p class="font-normal text-xs text-[#858584]">Price</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
+                </div>
+                <div>
+                  <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">
+                    0.33 wETH
+                  </h4>
+                </div>
+              </div>
+            </div>
 
-            <div class="lg:flex md:grid md:grid-cols-2 gap-5 py-10 justify-between">
-          <div class="bg-[#2B2B2B] rounded-2xl">
-            <img src="./images/Image Placeholder (7).png" alt="" class="w-90" />
-            <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
-              Distant Galaxy
-            </h3>
-            <div class="flex gap-5 py-2 px-5">
-              <img src="./images/Avatar (1).png" alt="" />
-              <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
-            </div>
-            <div class="flex gap-35 py-2">
-              <div class="px-5">
-                <p class="font-normal text-xs text-[#858584]">Price</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
+            <div class="bg-[#2B2B2B] rounded-2xl">
+              <img
+                src="./images/Image Placeholder (15).png"
+                alt=""
+                class="w-90"
+              />
+              <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
+                Distant Galaxy
+              </h3>
+              <div class="flex gap-5 py-2 px-5">
+                <img src="./images/Avatar (1).png" alt="" />
+                <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
               </div>
-              <div>
-                <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">0.33 wETH</h4>
+              <div class="flex gap-35 py-2">
+                <div class="px-5">
+                  <p class="font-normal text-xs text-[#858584]">Price</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
+                </div>
+                <div>
+                  <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">
+                    0.33 wETH
+                  </h4>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="bg-[#2B2B2B] rounded-2xl">
-            <img src="./images/Image Placeholder (15).png" alt="" class="w-90" />
-            <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
-              Distant Galaxy
-            </h3>
-            <div class="flex gap-5 py-2 px-5">
-              <img src="./images/Avatar (1).png" alt="" />
-              <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
-            </div>
-            <div class="flex gap-35 py-2">
-              <div class="px-5">
-                <p class="font-normal text-xs text-[#858584]">Price</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
+            <div class="bg-[#2B2B2B] rounded-2xl lg:block md:hidden hidden">
+              <img
+                src="./images/Image Placeholder (16).png"
+                alt=""
+                class="w-90"
+              />
+              <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
+                Distant Galaxy
+              </h3>
+              <div class="flex gap-5 py-2 px-5">
+                <img src="./images/Avatar (1).png" alt="" />
+                <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
               </div>
-              <div>
-                <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">0.33 wETH</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-[#2B2B2B] rounded-2xl lg:block md:hidden hidden">
-            <img src="./images/Image Placeholder (16).png" alt="" class="w-90" />
-            <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
-              Distant Galaxy
-            </h3>
-            <div class="flex gap-5 py-2 px-5">
-              <img src="./images/Avatar (1).png" alt="" />
-              <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
-            </div>
-            <div class="flex gap-35 py-2">
-              <div class="px-5">
-                <p class="font-normal text-xs text-[#858584]">Price</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
-              </div>
-              <div>
-                <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">0.33 wETH</h4>
+              <div class="flex gap-35 py-2">
+                <div class="px-5">
+                  <p class="font-normal text-xs text-[#858584]">Price</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
+                </div>
+                <div>
+                  <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">
+                    0.33 wETH
+                  </h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        </div>
-
 
         <div class="lg:block md:hidden hidden">
+          <div class="lg:flex md:grid py-10 justify-between">
+            <div class="bg-[#2B2B2B] rounded-2xl">
+              <img
+                src="./images/Image Placeholder (17).png"
+                alt=""
+                class="w-90"
+              />
+              <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
+                Distant Galaxy
+              </h3>
+              <div class="flex gap-5 py-2 px-5">
+                <img src="./images/Avatar (1).png" alt="" />
+                <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
+              </div>
+              <div class="flex gap-35 py-2">
+                <div class="px-5">
+                  <p class="font-normal text-xs text-[#858584]">Price</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
+                </div>
+                <div>
+                  <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">
+                    0.33 wETH
+                  </h4>
+                </div>
+              </div>
+            </div>
 
-            <div class="lg:flex md:grid py-10 justify-between">
-          <div class="bg-[#2B2B2B] rounded-2xl">
-            <img src="./images/Image Placeholder (17).png" alt="" class="w-90" />
-            <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
-              Distant Galaxy
-            </h3>
-            <div class="flex gap-5 py-2 px-5">
-              <img src="./images/Avatar (1).png" alt="" />
-              <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
-            </div>
-            <div class="flex gap-35 py-2">
-              <div class="px-5">
-                <p class="font-normal text-xs text-[#858584]">Price</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
+            <div class="bg-[#2B2B2B] rounded-2xl">
+              <img
+                src="./images/Image Placeholder (18).png"
+                alt=""
+                class="w-90"
+              />
+              <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
+                Distant Galaxy
+              </h3>
+              <div class="flex gap-5 py-2 px-5">
+                <img src="./images/Avatar (1).png" alt="" />
+                <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
               </div>
-              <div>
-                <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">0.33 wETH</h4>
+              <div class="flex gap-35 py-2">
+                <div class="px-5">
+                  <p class="font-normal text-xs text-[#858584]">Price</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
+                </div>
+                <div>
+                  <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">
+                    0.33 wETH
+                  </h4>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="bg-[#2B2B2B] rounded-2xl">
-            <img src="./images/Image Placeholder (18).png" alt="" class="w-90" />
-            <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
-              Distant Galaxy
-            </h3>
-            <div class="flex gap-5 py-2 px-5">
-              <img src="./images/Avatar (1).png" alt="" />
-              <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
-            </div>
-            <div class="flex gap-35 py-2">
-              <div class="px-5">
-                <p class="font-normal text-xs text-[#858584]">Price</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
+            <div class="bg-[#2B2B2B] rounded-2xl">
+              <img
+                src="./images/Image Placeholder (19).png"
+                alt=""
+                class="w-90"
+              />
+              <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
+                Distant Galaxy
+              </h3>
+              <div class="flex gap-5 py-2 px-5">
+                <img src="./images/Avatar (1).png" alt="" />
+                <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
               </div>
-              <div>
-                <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">0.33 wETH</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-[#2B2B2B] rounded-2xl">
-            <img src="./images/Image Placeholder (19).png" alt="" class="w-90" />
-            <h3 class="font-semibold text-xl text-[#FFFFFF] py-2 px-5">
-              Distant Galaxy
-            </h3>
-            <div class="flex gap-5 py-2 px-5">
-              <img src="./images/Avatar (1).png" alt="" />
-              <p class="font-normal text-base text-[#FFFFFF]">Animakid</p>
-            </div>
-            <div class="flex gap-35 py-2">
-              <div class="px-5">
-                <p class="font-normal text-xs text-[#858584]">Price</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
-              </div>
-              <div>
-                <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
-                <h4 class="font-normal text-base text-[#FFFFFF]">0.33 wETH</h4>
+              <div class="flex gap-35 py-2">
+                <div class="px-5">
+                  <p class="font-normal text-xs text-[#858584]">Price</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">1.63 ETH</h4>
+                </div>
+                <div>
+                  <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
+                  <h4 class="font-normal text-base text-[#FFFFFF]">
+                    0.33 wETH
+                  </h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        </div>
-
       </div>
 
       <div class="pb-5">
-        <div class="h-0.5 w-full bg-[#2B2B2B] "></div>
+        <div class="h-0.5 w-full bg-[#2B2B2B]"></div>
       </div>
     </div>
 
@@ -396,9 +487,13 @@
       <div class="lg:max-w-5xl md:max-w-2xl max-w-2xs m-auto">
         <div class="lg:flex justify-between py-10">
           <div>
-            <img src="./images/Logo (6).png" alt="">
-            <p class="font-normal text-base text-[#CCCCCC] w-55 mt-5">NFT marketplace UI created with Anima for Figma.</p>
-            <p class="font-normal text-base text-[#CCCCCC] pt-5">Join our community</p>
+            <img src="./images/Logo (6).png" alt="" />
+            <p class="font-normal text-base text-[#CCCCCC] w-55 mt-5">
+              NFT marketplace UI created with Anima for Figma.
+            </p>
+            <p class="font-normal text-base text-[#CCCCCC] pt-5">
+              Join our community
+            </p>
             <div class="text-[#858584] flex gap-3 pt-5 text-xl">
               <i class="fa-brands fa-discord"></i>
               <i class="fa-brands fa-youtube"></i>
@@ -410,25 +505,39 @@
             <h3 class="font-bold text-xl text-[#FFFFFF] pt-5">Explore</h3>
             <p class="font-normal text-base text-[#CCCCCC] pt-5">Marketplace</p>
             <p class="font-normal text-base text-[#CCCCCC] pt-5">Rankings</p>
-            <p class="font-normal text-base text-[#CCCCCC] pt-5">Connect a wallet</p>
+            <p class="font-normal text-base text-[#CCCCCC] pt-5">
+              Connect a wallet
+            </p>
           </div>
           <div>
-            <h3 class="font-bold text-xl text-[#FFFFFF] pt-5">Join our weekly digest</h3>
-            <p class="font-normal text-base text-[#CCCCCC] lg:w-55 md:w-110 w-70 mt-5">Get exclusive promotions & updates straight to your inbox.</p>
-            <div class="relative mt-5 ">
-              <input type="text" placeholder="Enter your email here" class="bg-[#FFFFFF] px-10 py-4 rounded-2xl font-normal text-base text-[#2B2B2B]">
-              <button class="bg-[#A259FF] md:px-10 px-24 py-4 rounded-2xl md:absolute static left-50 text-[#FFFFFF] font-semibold text-base">
+            <h3 class="font-bold text-xl text-[#FFFFFF] pt-5">
+              Join our weekly digest
+            </h3>
+            <p
+              class="font-normal text-base text-[#CCCCCC] lg:w-55 md:w-110 w-70 mt-5"
+            >
+              Get exclusive promotions & updates straight to your inbox.
+            </p>
+            <div class="relative mt-5">
+              <input
+                type="text"
+                placeholder="Enter your email here"
+                class="bg-[#FFFFFF] px-10 py-4 rounded-2xl font-normal text-base text-[#2B2B2B]"
+              />
+              <button
+                class="bg-[#A259FF] md:px-10 px-24 py-4 rounded-2xl md:absolute static left-50 text-[#FFFFFF] font-semibold text-base"
+              >
                 Subscribe
               </button>
             </div>
           </div>
         </div>
 
-        <div class="h-0.5 lg:w-280 bg-[#858584] "></div>
-        <p class="font-normal text-xs text-[#CCCCCC] py-5">Ⓒ NFT Market. Use this template freely.</p>
+        <div class="h-0.5 lg:w-280 bg-[#858584]"></div>
+        <p class="font-normal text-xs text-[#CCCCCC] py-5">
+          Ⓒ NFT Market. Use this template freely.
+        </p>
       </div>
     </div>
-
-</body>
-
+  </body>
 </html>

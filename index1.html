@@ -1,140 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="bg-[#2B2B2B] text-[#fff]">
-         <div class="lg:max-w-7xl md:max-w-2xl max-w-2xs flex justify-between m-auto items-center py-6  ">
+      <div
+        class="lg:max-w-7xl md:max-w-2xl max-w-2xs flex justify-between m-auto items-center py-6"
+      >
         <div>
-            <img class="lg:w-50 md:w-40 w-30" src="./img/logo.png" alt="">
+          <img class="lg:w-50 md:w-40 w-30" src="./img/logo.png" alt="" />
         </div>
-        <div class="lg:flex gap-4 lg:block md:hidden  hidden ">
-            <p class="hover:text-[#A259FF]">Marketplace</p>
-            <p class="hover:text-[#A259FF]">Rankings</p>
-            <p class="hover:text-[#A259FF]">Connect a wallet</p>
+        <div class="lg:flex gap-4 lg:block md:hidden hidden">
+          <ul class="flex gap-10 items-center">
+            <li>
+              <a href="./marketplace.html">Marketplace</a>
+            </li>
+            <li>
+              <a href="./Artist.html">Rankings</a>
+            </li>
+            <li>
+              <a href="./connect.wallet.html">Connect a wallet</a>
+            </li>
+            <div
+              class="lg:flex items-center gap-2 lg:block md:hidden hidden py-3 text-sm px-4 hover:bg-[#A259FF] border-2 border-[#A259FF] text-[#A259FF] hover:text-[#fff] rounded-xl"
+            >
+              <i class="fa-regular fa-user"></i>
+              <p>Sign Up</p>
+            </div>
+          </ul>
+        </div>
+
+        <div class="lg:hidden md:block block">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+      </div>
+      
+      <div
+        class="lg:flex md:flex lg:max-w-6xl md:max-w-2xl max-w-2xs mt-10 m-auto justify-between lg:gap-10 md:gap-8"
+      >
+        <div>
+          <p class="lg:text-6xl md:text-2xl lg:w-90 md:w-50 text-2xl font-bold">
+            Discover digital art & <br />
+            Collect NFTs
+          </p>
+          <p class="lg:text-xl md:text-sm text-sm mt-10 md:w-60 lg:w-100 w-65">
+            NFT marketplace UI created with Anima for Figma. Collect, buy and
+            sell art from more than 20k NFT artists.
+          </p>
+          <button
+            class="py-3 px-10 mt-5 bg-[#fff] text-[#000] hover:text-[#fff] font-bold rounded-2xl hover:bg-[#A259FF] lg:block md:block hidden"
+          >
+            Get Started
+          </button>
+          <div
+            class="lg:flex md:flex lg:justify-between md:justify-between justify-between mt-10 lg:block md:block hidden"
+          >
+            <div>
+              <p class="lg:text-3xl md:text-2xl font-bold">240k+</p>
+              <p class="lg:text-2xl md:text-xl">Total Sale</p>
+            </div>
+            <div>
+              <p class="lg:text-3xl md:text-2xl font-bold">100k+</p>
+              <p class="lg:text-2xl md:text-xl">Auctions</p>
+            </div>
+            <div>
+              <p class="lg:text-3xl md:text-2xl font-bold">240k+</p>
+              <p class="lg:text-2xl md:text-xl">Artists</p>
+            </div>
+          </div>
         </div>
         <div
-            class="lg:flex items-center gap-2  lg:block md:hidden  hidden  py-3 text-sm px-4 hover:bg-[#A259FF] bg-[#fff] text-[#000] hover:text-[#fff] rounded-xl">
-            <i class="fa-regular fa-user"></i>
-            <p>Sign Up</p>
-        </div>
-        <div class="lg:hidden md:block block">
-            <i class="fa-solid fa-bars-staggered"></i>
-        </div>
-    </div>
-     <div class="lg:flex md:flex lg:max-w-6xl md:max-w-2xl max-w-2xs mt-10   m-auto justify-between lg:gap-10 md:gap-8">
-        <div>
-            <p class="lg:text-6xl md:text-2xl lg:w-90 md:w-50  text-2xl font-bold">Discover digital art & <br> Collect NFTs</p>
-            <p class="lg:text-xl md:text-sm text-sm mt-10 md:w-60  lg:w-100 w-65">NFT marketplace UI created with Anima
-                for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
-            <button
-                class="py-3 px-10 mt-5  bg-[#fff] text-[#000] hover:text-[#fff] font-bold rounded-2xl hover:bg-[#A259FF] lg:block md:block hidden">Get
-                Started
-            </button>
-            <div class="lg:flex md:flex lg:justify-between md:justify-between justify-between mt-10 lg:block md:block hidden">
-                <div>
-                    <p class="lg:text-3xl md:text-2xl   font-bold">240k+ </p>
-                    <p class="lg:text-2xl md:text-xl  ">Total Sale</p>
-                </div>
-                <div>
-                    <p class="lg:text-3xl  md:text-2xl font-bold  ">100k+ </p>
-                    <p class="lg:text-2xl md:text-xl  ">Auctions</p>
-                </div>
-                <div>
-                    <p class="lg:text-3xl  md:text-2xl font-bold  ">240k+ </p>
-                    <p class="lg:text-2xl md:text-xl  ">Artists</p>
-                </div>
+          class="rounded-2xl bg-[#3B3B3B] md:h-70 lg:h-125 md:h-100 lg:mt-hidden md:mt-hidden mt-3"
+        >
+          <img src="./img/Image Placeholder (3).png" alt="" />
+          <div class="py-5 px-3">
+            <p class="lg:text-xl">Space Walking</p>
+            <div class="flex items-center gap-2 mt-1">
+              <img src="./img/Asset 12 2 (21).png" alt="" />
+              <p class="lg:text-lg">Animakid</p>
             </div>
-        </div>
-        <div class="  rounded-2xl bg-[#3B3B3B] md:h-70 lg:h-125 md:h-100 lg:mt-hidden  md:mt-hidden  mt-3 ">
-            <img src="./img/Image Placeholder (3).png" alt="">
-            <div class="py-5 px-3">
-                <p class="lg:text-xl  ">Space Walking</p>
-                <div class="flex items-center gap-2 mt-1">
-                    <img src="./img/Asset 12 2 (21).png" alt="">
-                    <p class="lg:text-lg ">Animakid</p>
-                </div>
-            </div>
+          </div>
         </div>
         <button
-            class="py-3 lg:hidden md:hidden block lg:px-10 md:px-10 px-25 mt-5  bg-[#fff] text-[#000] hover:text-[#fff] font-bold rounded-2xl hover:bg-[#A259FF] lg:block md:block">Get
-            Started
+          class="py-3 lg:hidden md:hidden block lg:px-10 md:px-10 px-25 mt-5 bg-[#fff] text-[#000] hover:text-[#fff] font-bold rounded-2xl hover:bg-[#A259FF] lg:block md:block"
+        >
+          Get Started
         </button>
-        <div class="flex justify-between mt-10   lg:hidden md:hidden block">
-            <div>
-                <p class="text-xl font-bold">240k+ </p>
-                <p class="text-sm">Total Sale</p>
-            </div>
-            <div>
-                <p class="text-xl font-bold">100k+ </p>
-                <p class="text-sm">Auctions</p>
-            </div>
-            <div>
-                <p class="text-xl font-bold">240k+ </p>
-                <p class="text-sm">Artists</p>
-            </div>
+        <div class="flex justify-between mt-10 lg:hidden md:hidden block">
+          <div>
+            <p class="text-xl font-bold">240k+</p>
+            <p class="text-sm">Total Sale</p>
+          </div>
+          <div>
+            <p class="text-xl font-bold">100k+</p>
+            <p class="text-sm">Auctions</p>
+          </div>
+          <div>
+            <p class="text-xl font-bold">240k+</p>
+            <p class="text-sm">Artists</p>
+          </div>
         </div>
-    </div>
-    <div class="lg:max-w-6xl md:max-w-2xl max-w-2xs m-auto lg:mt-25 md:mt-20 mt-10">
-        <p class="lg:text-4xl md:text-2xl text-xl font-bold">Trending Collection</p>
-        <p class="lg:text-2xl md:text-xl text-xs mt-2  lg:block md:block hidden">Checkout our weekly updated trending
-            collection.</p>
-        <p class="lg:text-2xl md:text-xl text-xs mt-2  lg:hidden md:hidden tracking-tight">Checkout our weekly updated
-            trending collection.</p>
-    </div>
-    <div class="lg:max-w-6xl md:max-w-2xl max-w-2xs m-auto mt-10 flex justify-between gap-15">
-        <div class="lg:block md:block  block">
-            <img class="w-full" src="./img/Primary Photo Placeholder (3).png" alt="">
-            <div class="flex gap-3 mt-2">
-                <img src="./img/Frame 228 (4).png" alt="">
+      </div>
+      <div
+        class="lg:max-w-6xl md:max-w-2xl max-w-2xs m-auto lg:mt-25 md:mt-20 mt-10"
+      >
+        <p class="lg:text-4xl md:text-2xl text-xl font-bold">
+          Trending Collection
+        </p>
+        <p class="lg:text-2xl md:text-xl text-xs mt-2 lg:block md:block hidden">
+          Checkout our weekly updated trending collection.
+        </p>
+        <p
+          class="lg:text-2xl md:text-xl text-xs mt-2 lg:hidden md:hidden tracking-tight"
+        >
+          Checkout our weekly updated trending collection.
+        </p>
+      </div>
+      <div
+        class="lg:max-w-6xl md:max-w-2xl max-w-2xs m-auto mt-10 flex justify-between gap-15"
+      >
+        <div class="lg:block md:block block">
+          <img
+            class="w-full"
+            src="./img/Primary Photo Placeholder (3).png"
+            alt=""
+          />
+          <div class="flex gap-3 mt-2">
+            <img src="./img/Frame 228 (4).png" alt="" />
+          </div>
+          <div class="mt-3">
+            <p class="text-xl font-bold">DSGN Animals</p>
+            <div class="flex items-center gap-1 mt-2">
+              <img src="./img/Avatar (3).png" alt="" />
+              <p>MrFox</p>
             </div>
-            <div class="mt-3">
-                <p class="text-xl font-bold">DSGN Animals</p>
-                <div class="flex items-center gap-1 mt-2">
-                    <img src="./img/Avatar (3).png" alt="">
-                    <p>MrFox</p>
-                </div>
-            </div>
+          </div>
         </div>
         <div class="lg:block md:block hidden">
-            <img src="./img/Primary Photo Placeholder (4).png" alt="">
-            <div class="flex gap-3 mt-2">
-                <img src="./img/Frame 228 (5).png" alt="">
+          <img src="./img/Primary Photo Placeholder (4).png" alt="" />
+          <div class="flex gap-3 mt-2">
+            <img src="./img/Frame 228 (5).png" alt="" />
+          </div>
+          <div class="mt-3">
+            <p class="text-xl font-bold">Magic Mushrooms</p>
+            <div class="flex items-center gap-1 mt-2">
+              <img src="./img/Avatar (4).png" alt="" />
+              <p>Shroomie</p>
             </div>
-            <div class="mt-3">
-                <p class="text-xl font-bold">Magic Mushrooms</p>
-                <div class="flex items-center gap-1 mt-2">
-                    <img src="./img/Avatar (4).png" alt="">
-                    <p>Shroomie</p>
-                </div>
-            </div>
+          </div>
         </div>
         <div class="lg:block md:hidden hidden">
-            <img src="./img/Primary Photo Placeholder (5).png" alt="">
-            <div class="flex gap-2 mt-2">
-                <img src="./img/Frame 228 (6).png" alt="">
+          <img src="./img/Primary Photo Placeholder (5).png" alt="" />
+          <div class="flex gap-2 mt-2">
+            <img src="./img/Frame 228 (6).png" alt="" />
+          </div>
+          <div class="mt-3">
+            <p class="text-xl font-bold">Disco Machines</p>
+            <div class="flex items-center gap-1 mt-2">
+              <img src="./img/Avatar (5).png" alt="" />
+              <p>BeKind2Robots</p>
             </div>
-            <div class="mt-3">
-                <p class="text-xl font-bold">Disco Machines</p>
-                <div class="flex items-center gap-1 mt-2">
-                    <img src="./img/Avatar (5).png" alt="">
-                    <p>BeKind2Robots</p>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-
-
 
     <!-- Hulkar1 -->
 
@@ -171,7 +212,7 @@
               <div class="lg:block md:flex flex">
                 <div class="flex gap-4">
                   <div
-                    class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-2.5 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
+                    class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-3 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
                   >
                     <p class="font-normal md:text-base text-xs text-[#858584]">
                       1
@@ -207,7 +248,7 @@
               <div class="lg:block md:flex flex">
                 <div class="flex gap-4">
                   <div
-                    class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-2.5 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
+                    class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-3 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
                   >
                     <p class="font-normal md:text-base text-xs text-[#858584]">
                       2
@@ -243,7 +284,7 @@
               <div class="lg:block md:flex flex">
                 <div class="flex gap-4">
                   <div
-                    class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-2.5 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
+                    class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-3 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
                   >
                     <p class="font-normal md:text-base text-xs text-[#858584]">
                       3
@@ -279,7 +320,7 @@
               <div class="lg:block md:flex flex">
                 <div class="flex gap-4">
                   <div
-                    class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-2.5 pl-1.5 md:pt-1 pt-0.5 md:h-8 w-5 rounded-full"
+                    class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-3 pl-1.5 md:pt-1 pt-0.5 md:h-8 w-5 rounded-full"
                   >
                     <p class="font-normal md:text-base text-xs text-[#858584]">
                       4
@@ -317,7 +358,7 @@
               <div class="lg:block md:flex flex">
                 <div class="flex gap-4">
                   <div
-                    class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-2.5 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
+                    class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-3 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
                   >
                     <p class="font-normal md:text-base text-xs text-[#858584]">
                       5
@@ -352,7 +393,7 @@
               <div class="lg:block md:flex flex">
                 <div class="flex gap-4">
                   <div
-                    class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-2.5 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
+                    class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-3 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
                   >
                     <p class="font-normal md:text-base text-xs text-[#858584]">
                       6
@@ -388,7 +429,7 @@
                 <div class="lg:block md:flex flex">
                   <div class="flex gap-4">
                     <div
-                      class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-2.5 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
+                      class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-3 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
                     >
                       <p
                         class="font-normal md:text-base text-xs text-[#858584]"
@@ -426,7 +467,7 @@
                 <div class="lg:block md:flex flex">
                   <div class="flex gap-4">
                     <div
-                      class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-2.5 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
+                      class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-3 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
                     >
                       <p
                         class="font-normal md:text-base text-xs text-[#858584]"
@@ -468,7 +509,7 @@
                 <div class="lg:block md:flex flex">
                   <div class="flex gap-4">
                     <div
-                      class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-2.5 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
+                      class="bg-[#2B2B2B] lg:static md:absolute absolute md:w-8 w-5 md:pl-3 pl-1.5 pt-0.5 md:pt-1 md:h-8 h-5 rounded-full"
                     >
                       <p
                         class="font-normal md:text-base text-xs text-[#858584]"
@@ -636,64 +677,136 @@
 
         <div class="md:flex gap-10">
           <div class="flex gap-10">
-          <div class="bg-[#3B3B3B] rounded-2xl mt-10">
-            <img src="./images/Category Icon (2).png" alt="" class="lg:w-70 md:w-85 w-60" />
-            <p class="py-5 px-5 font-semibold lg:text-xl md:text-lg text-xs text-[#FFFFFF]">Art</p>
+            <div class="bg-[#3B3B3B] rounded-2xl mt-10">
+              <img
+                src="./images/Category Icon (2).png"
+                alt=""
+                class="lg:w-70 md:w-85 w-60"
+              />
+              <p
+                class="py-5 px-5 font-semibold lg:text-xl md:text-lg text-xs text-[#FFFFFF]"
+              >
+                Art
+              </p>
+            </div>
+            <div class="bg-[#3B3B3B] rounded-2xl mt-10">
+              <img
+                src="./images/Photo & Icon (14).png"
+                alt=""
+                class="lg:w-70 md:w-85 w-60"
+              />
+              <p
+                class="py-5 px-5 font-semibold text-[#FFFFFF] lg:text-xl md:text-lg text-xs"
+              >
+                Collectibles
+              </p>
+            </div>
           </div>
-          <div class="bg-[#3B3B3B] rounded-2xl mt-10">
-            <img src="./images/Photo & Icon (14).png" alt="" class="lg:w-70 md:w-85 w-60" />
-            <p class="py-5 px-5 font-semibold text-[#FFFFFF] lg:text-xl md:text-lg text-xs">Collectibles</p>
-          </div>
-        </div>
 
-        <div class="md:flex flex gap-10">
-          <div class="bg-[#3B3B3B] rounded-2xl mt-10">
-            <img src="./images/Category Icon (4).png" alt="" class="lg:w-70 md:w-85 w-65" />
-            <p class="py-5 px-5 font-semibold lg:text-xl md:text-lg text-xs text-[#FFFFFF]">Music</p>
+          <div class="md:flex flex gap-10">
+            <div class="bg-[#3B3B3B] rounded-2xl mt-10">
+              <img
+                src="./images/Category Icon (4).png"
+                alt=""
+                class="lg:w-70 md:w-85 w-65"
+              />
+              <p
+                class="py-5 px-5 font-semibold lg:text-xl md:text-lg text-xs text-[#FFFFFF]"
+              >
+                Music
+              </p>
+            </div>
+            <div class="bg-[#3B3B3B] rounded-2xl mt-10">
+              <img
+                src="./images/Category Icon (5).png"
+                alt=""
+                class="lg:w-70 md:w-85 w-60"
+              />
+              <p
+                class="py-5 px-5 font-semibold lg:text-xl md:text-lg text-xs text-[#FFFFFF]"
+              >
+                Photography
+              </p>
+            </div>
           </div>
-          <div class="bg-[#3B3B3B] rounded-2xl mt-10">
-            <img src="./images/Category Icon (5).png" alt="" class="lg:w-70 md:w-85 w-60" />
-            <p class="py-5 px-5 font-semibold lg:text-xl md:text-lg text-xs text-[#FFFFFF]">Photography</p>
-          </div>
-        </div>
         </div>
 
         <div class="md:flex gap-10">
           <div class="flex gap-10">
-          <div class="bg-[#3B3B3B] rounded-2xl mt-10">
-            <img src="./images/Photo & Icon (15).png" alt="" class="lg:w-70 md:w-85 w-70" />
-            <p class="py-5 px-5 font-semibold lg:text-xl md:text-lg text-base text-[#FFFFFF]">Video</p>
+            <div class="bg-[#3B3B3B] rounded-2xl mt-10">
+              <img
+                src="./images/Photo & Icon (15).png"
+                alt=""
+                class="lg:w-70 md:w-85 w-70"
+              />
+              <p
+                class="py-5 px-5 font-semibold lg:text-xl md:text-lg text-base text-[#FFFFFF]"
+              >
+                Video
+              </p>
+            </div>
+            <div class="bg-[#3B3B3B] rounded-2xl mt-10">
+              <img
+                src="./images/Category Icon (6).png"
+                alt=""
+                class="lg:w-70 md:w-85 w-70"
+              />
+              <p
+                class="py-5 px-5 font-semibold text-[#FFFFFF] lg:text-xl md:text-lg text-xs"
+              >
+                Utility
+              </p>
+            </div>
           </div>
-          <div class="bg-[#3B3B3B] rounded-2xl mt-10">
-            <img src="./images/Category Icon (6).png" alt="" class="lg:w-70 md:w-85 w-70" />
-            <p class="py-5 px-5 font-semibold text-[#FFFFFF] lg:text-xl md:text-lg text-xs">Utility</p>
-          </div>
-        </div>
 
-        <div class="md:flex flex gap-10">
-          <div class="bg-[#3B3B3B] rounded-2xl mt-10">
-            <img src="./images/Category Icon (7).png" alt="" class="lg:w-70 md:w-85 w-70" />
-            <p class="py-5 px-5 font-semibold lg:text-xl md:text-lg text-xs text-[#FFFFFF]">Sport</p>
+          <div class="md:flex flex gap-10">
+            <div class="bg-[#3B3B3B] rounded-2xl mt-10">
+              <img
+                src="./images/Category Icon (7).png"
+                alt=""
+                class="lg:w-70 md:w-85 w-70"
+              />
+              <p
+                class="py-5 px-5 font-semibold lg:text-xl md:text-lg text-xs text-[#FFFFFF]"
+              >
+                Sport
+              </p>
+            </div>
+            <div class="bg-[#3B3B3B] rounded-2xl mt-10">
+              <img
+                src="./images/Photo & Icon (16).png"
+                alt=""
+                class="lg:w-70 md:w-85 w-70"
+              />
+              <p
+                class="py-5 px-5 font-semibold lg:text-xl md:text-lg text-xs text-[#FFFFFF]"
+              >
+                Virtual Worlds
+              </p>
+            </div>
           </div>
-          <div class="bg-[#3B3B3B] rounded-2xl mt-10">
-            <img src="./images/Photo & Icon (16).png" alt="" class="lg:w-70 md:w-85 w-70" />
-            <p class="py-5 px-5 font-semibold lg:text-xl md:text-lg text-xs text-[#FFFFFF]">Virtual Worlds</p>
-          </div>
-        </div>
         </div>
 
         <!-- /Section2 -->
-
-
 
         <!-- Section3 -->
 
         <div class="md:flex justify-between items-center mt-30">
           <div>
-            <h3 class="font-semibold lg:text-4xl md:text-3xl text-xl text-[#FFFFFF]">Discover More NFTs</h3>
-            <p class="font-normal lg:text-xl md:text-lg text-base text-[#FFFFFF] pt-3">Explore new trending NFTs</p>
+            <h3
+              class="font-semibold lg:text-4xl md:text-3xl text-xl text-[#FFFFFF]"
+            >
+              Discover More NFTs
+            </h3>
+            <p
+              class="font-normal lg:text-xl md:text-lg text-base text-[#FFFFFF] pt-3"
+            >
+              Explore new trending NFTs
+            </p>
           </div>
-          <button class="md:block hidden border-[#A259FF] border-2 py-4 px-15 rounded-xl text-base font-semibold hover:border-[#FFFFFF] hover:text-[#A259FF] text-[#FFFFFF]">
+          <button
+            class="md:block hidden border-[#A259FF] border-2 py-4 px-15 rounded-xl text-base font-semibold hover:border-[#FFFFFF] hover:text-[#A259FF] text-[#FFFFFF]"
+          >
             <i class="fa-regular fa-eye"></i>
             See All
           </button>
@@ -701,188 +814,284 @@
 
         <div class="md:flex gap-10">
           <div class="bg-[#3B3B3B] rounded-2xl mt-10">
-            <img src="./images/Image Placeholder1.png" alt="" class="w-90  rounded-t-2xl">
-            <h4 class="font-semibold text-xl text-[#FFFFFF] px-5 pt-5">Distant Galaxy</h4>
+            <img
+              src="./images/Image Placeholder1.png"
+              alt=""
+              class="w-90 rounded-t-2xl"
+            />
+            <h4 class="font-semibold text-xl text-[#FFFFFF] px-5 pt-5">
+              Distant Galaxy
+            </h4>
             <div class="flex gap-5 pt-5 px-5">
-              <img src="./images/Avatar Placeholder (21).png" alt="">
+              <img src="./images/Avatar Placeholder (21).png" alt="" />
               <p class="font-normal text-base text-[#FFFFFF]">MoonDancer</p>
             </div>
             <div class="flex md:gap-35 gap-25 px-5 py-5">
               <div>
                 <p class="font-normal text-xs text-[#858584]">Price</p>
-                <h3 class="font-normal text-base text-[#FFFFFF] pt-2">1.63 ETH</h3>
+                <h3 class="font-normal text-base text-[#FFFFFF] pt-2">
+                  1.63 ETH
+                </h3>
               </div>
               <div>
                 <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
-                <h3 class="font-normal text-base text-[#FFFFFF] pt-2">0.33 wETH</h3>
+                <h3 class="font-normal text-base text-[#FFFFFF] pt-2">
+                  0.33 wETH
+                </h3>
               </div>
             </div>
           </div>
 
           <div class="bg-[#3B3B3B] rounded-2xl mt-10">
-            <img src="./images/Image Placeholder (2).png" alt="" class="w-90">
-            <h4 class="font-semibold text-xl text-[#FFFFFF] px-5 pt-5">Life On Edena</h4>
+            <img src="./images/Image Placeholder (2).png" alt="" class="w-90" />
+            <h4 class="font-semibold text-xl text-[#FFFFFF] px-5 pt-5">
+              Life On Edena
+            </h4>
             <div class="flex gap-5 pt-5 px-5">
-              <img src="./images/Avatar.png" alt="">
+              <img src="./images/Avatar.png" alt="" />
               <p class="font-normal text-base text-[#FFFFFF]">NebulaKid</p>
             </div>
             <div class="flex md:gap-35 gap-25 px-5 py-5">
               <div>
                 <p class="font-normal text-xs text-[#858584]">Price</p>
-                <h3 class="font-normal text-base text-[#FFFFFF] pt-2">1.63 ETH</h3>
+                <h3 class="font-normal text-base text-[#FFFFFF] pt-2">
+                  1.63 ETH
+                </h3>
               </div>
               <div>
                 <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
-                <h3 class="font-normal text-base text-[#FFFFFF] pt-2">0.33 wETH</h3>
+                <h3 class="font-normal text-base text-[#FFFFFF] pt-2">
+                  0.33 wETH
+                </h3>
               </div>
             </div>
           </div>
 
           <div class="bg-[#3B3B3B] lg:block md:hidden block rounded-2xl mt-10">
-            <img src="./images/Image Placeholder (3).png" alt="" class="w-90">
-            <h4 class="font-semibold text-xl text-[#FFFFFF] px-5 pt-5">AstroFiction</h4>
+            <img src="./images/Image Placeholder (3).png" alt="" class="w-90" />
+            <h4 class="font-semibold text-xl text-[#FFFFFF] px-5 pt-5">
+              AstroFiction
+            </h4>
             <div class="flex gap-5 pt-5 px-5">
-              <img src="./images/Avatar (1).png" alt="">
+              <img src="./images/Avatar (1).png" alt="" />
               <p class="font-normal text-base text-[#FFFFFF]">Spaceone</p>
             </div>
-            <div class="flex md:gap-35 gap-25  px-5 py-5">
+            <div class="flex md:gap-35 gap-25 px-5 py-5">
               <div>
                 <p class="font-normal text-xs text-[#858584]">Price</p>
-                <h3 class="font-normal text-base text-[#FFFFFF] pt-2">1.63 ETH</h3>
+                <h3 class="font-normal text-base text-[#FFFFFF] pt-2">
+                  1.63 ETH
+                </h3>
               </div>
               <div>
                 <p class="font-normal text-xs text-[#858584]">Highest Bid</p>
-                <h3 class="font-normal text-base text-[#FFFFFF] pt-2">0.33 wETH</h3>
+                <h3 class="font-normal text-base text-[#FFFFFF] pt-2">
+                  0.33 wETH
+                </h3>
               </div>
             </div>
           </div>
         </div>
 
-        <button class="md:hidden block mt-5 border-[#A259FF] border-2 py-4 px-26 rounded-xl text-base font-semibold hover:border-[#FFFFFF] hover:text-[#A259FF] text-[#FFFFFF]">
-            <i class="fa-regular fa-eye"></i>
-            See All
-          </button>
-
+        <button
+          class="md:hidden block mt-5 border-[#A259FF] border-2 py-4 px-26 rounded-xl text-base font-semibold hover:border-[#FFFFFF] hover:text-[#A259FF] text-[#FFFFFF]"
+        >
+          <i class="fa-regular fa-eye"></i>
+          See All
+        </button>
 
         <!-- /Section3 -->
-     
       </div>
     </div>
 
-
-   
     <div class="bg-[#2B2B2B] text-[#fff]">
-         <div class="bg-[#000] text-[#fff]">
-         <div class="  m-auto    ">
-        <div class="relative group">
-            <img class=" w-full   " src="./img/NFT Highlight (4).png" alt="" >
+      <div class="bg-[#000] text-[#fff]">
+        <div class="m-auto">
+          <div class="relative group">
+            <img class="w-full" src="./img/NFT Highlight (4).png" alt="" />
             <div
-                class="absolute inset-0 bg-gradient-to-b from-[#A259FF00] to-[#A259FF] opacity-0 group-hover:opacity-100 transition duration-500">
-                <div class="max-w-6xl m-auto lg:flex lg:block md:block hidden md:flex flex-hidden  justify-between mt-100">
-                    <div>
-                        <div class="flex items-center gap-3 bg-[#3B3B3B]  py-1 px-2 w-30 rounded-4xl">
-                            <img src="./img/Avatar (6).png" alt="">
-                            <p>Shroomie</p>
-                        </div>
-                        <p class="text-5xl font-bold mt-8 ">Magic Mashrooms</p>
-                        <button class="py-3 flex gap-2 items-center  px-13 rounded-2xl bg-[#fff] text-[#000] font-bold mt-8">
-                            <img src="./img/Eye.png" alt="">
-                            See NFT</button>
-                    </div>
-                    <div class=" lg:w-110  py-10 px-15 rounded-4xl bg-[#3B3B3B80]">
-                        <p class="text-xl">Auction ends in:</p>
-                        <div class="flex gap-8  mt-5">
-                            <div>
-                                <p class="text-5xl font-bold">59</p>
-                                <p class="text-xl mt-2">Hours</p>
-                            </div>
-                            <p class="text-5xl font-bold">: </p>
-                            <div>
-                                <p class="text-5xl font-bold">59</p>
-                                <p class="text-xl mt-2">Hours</p>
-                            </div>
-                            <p class="text-5xl font-bold">: </p>
-                            <div>
-                                <p class="text-5xl font-bold">59</p>
-                                <p class="text-xl mt-2">Hours</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="py-3 lg:hidden md:hidden block  px-13 rounded-2xl bg-[#fff] text-[#000] font-bold mt-8">See
-                            NFT</button>
+              class="absolute inset-0 bg-gradient-to-b from-[#A259FF00] to-[#A259FF] opacity-0 group-hover:opacity-100 transition duration-500"
+            >
+              <div
+                class="max-w-6xl m-auto lg:flex lg:block md:block hidden md:flex flex-hidden justify-between mt-100"
+              >
+                <div>
+                  <div
+                    class="flex items-center gap-3 bg-[#3B3B3B] py-1 px-2 w-30 rounded-4xl"
+                  >
+                    <img src="./img/Avatar (6).png" alt="" />
+                    <p>Shroomie</p>
+                  </div>
+                  <p class="text-5xl font-bold mt-8">Magic Mashrooms</p>
+                  <button
+                    class="py-3 flex gap-2 items-center px-13 rounded-2xl bg-[#fff] text-[#000] font-bold mt-8"
+                  >
+                    <img src="./img/Eye.png" alt="" />
+                    See NFT
+                  </button>
                 </div>
+                <div class="lg:w-110 py-10 px-15 rounded-4xl bg-[#3B3B3B80]">
+                  <p class="text-xl">Auction ends in:</p>
+                  <div class="flex gap-8 mt-5">
+                    <div>
+                      <p class="text-5xl font-bold">59</p>
+                      <p class="text-xl mt-2">Hours</p>
+                    </div>
+                    <p class="text-5xl font-bold">:</p>
+                    <div>
+                      <p class="text-5xl font-bold">59</p>
+                      <p class="text-xl mt-2">Hours</p>
+                    </div>
+                    <p class="text-5xl font-bold">:</p>
+                    <div>
+                      <p class="text-5xl font-bold">59</p>
+                      <p class="text-xl mt-2">Hours</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="py-3 lg:hidden md:hidden block px-13 rounded-2xl bg-[#fff] text-[#000] font-bold mt-8"
+                >
+                  See NFT
+                </button>
+              </div>
             </div>
+          </div>
         </div>
-
-    </div>
-    
-     </div>
+      </div>
       <div class="lg:max-w-6xl md:max-w-2xl max-w-2xs m-auto mt-20">
-        <p class=" lg:text-4xl md:text-2xl text-xl font-bold">How it works</p>
+        <p class="lg:text-4xl md:text-2xl text-xl font-bold">How it works</p>
         <p class="lgtext-2xl md:text-xl mt-2">Find out how to get started</p>
-    </div>
-     <div class="mt-10 lg:flex md:flex md:gap-1  lg:max-w-6xl md:max-w-2xl max-w-2xs  m-auto  justify-between    ">
-        <div class="lg:gap-0 md:gap-0 gap-10 px-6 py-4 lg:px-6 mt-10 md:px-6 pb-5 lg:text-center md:text-center  items-center lg:text-center lg:block md:block flex  rounded-2xl bg-[#3B3B3B]">
-            <img class="m-auto lg:block md:block hidden " src="./img/Icon (30).png" alt="">
-            <img class="lg:hidden md:hidden block" src="./img/Icon (32).png" alt="">
+      </div>
+      <div
+        class="mt-10 lg:flex md:flex md:gap-1 lg:max-w-6xl md:max-w-2xl max-w-2xs m-auto justify-between"
+      >
+        <div
+          class="lg:gap-0 md:gap-0 gap-10 px-6 py-4 lg:px-6 mt-10 md:px-6 pb-5 lg:text-center md:text-center items-center lg:text-center lg:block md:block flex rounded-2xl bg-[#3B3B3B]"
+        >
+          <img
+            class="m-auto lg:block md:block hidden"
+            src="./img/Icon (30).png"
+            alt=""
+          />
+          <img
+            class="lg:hidden md:hidden block"
+            src="./img/Icon (32).png"
+            alt=""
+          />
           <div>
-               <p class="  lg:text-xl text-sm font-bold mb-2 md:text-sm">Setup Your wallet</p>
-            <p class="md:text-xs text-xs lg:text-sm md:w-45 lg:w-60 lg:ml-4">Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon.</p>
+            <p class="lg:text-xl text-sm font-bold mb-2 md:text-sm">
+              Setup Your wallet
+            </p>
+            <p class="md:text-xs text-xs lg:text-sm md:w-45 lg:w-60 lg:ml-4">
+              Set up your wallet of choice. Connect it to the Animarket by
+              clicking the wallet icon.
+            </p>
           </div>
         </div>
-         <div class="lg:gap-0  md:gap-0 gap-10 px-6 py-4 lg:px-6 mt-10 md:px-6 pb-5 lg:text-center md:text-center  items-center lg:text-center lg:block md:block flex  rounded-2xl bg-[#3B3B3B]">
-            <img class="m-auto lg:block md:block hidden " src="img/Icon (33).png" alt="">
-            <img class="lg:hidden md:hidden block" src="./img/Icon (32).png" alt="">
+        <div
+          class="lg:gap-0 md:gap-0 gap-10 px-6 py-4 lg:px-6 mt-10 md:px-6 pb-5 lg:text-center md:text-center items-center lg:text-center lg:block md:block flex rounded-2xl bg-[#3B3B3B]"
+        >
+          <img
+            class="m-auto lg:block md:block hidden"
+            src="img/Icon (33).png"
+            alt=""
+          />
+          <img
+            class="lg:hidden md:hidden block"
+            src="./img/Icon (32).png"
+            alt=""
+          />
           <div>
-               <p class="  lg:text-xl text-sm font-bold mb-2 md:text-sm">Create Collection</p>
-            <p class="md:text-xs text-xs lg:text-sm md:w-45 lg:w-60 lg:ml-4">Upload your work and setup your collection. Add a description, social links and floor price.</p>
+            <p class="lg:text-xl text-sm font-bold mb-2 md:text-sm">
+              Create Collection
+            </p>
+            <p class="md:text-xs text-xs lg:text-sm md:w-45 lg:w-60 lg:ml-4">
+              Upload your work and setup your collection. Add a description,
+              social links and floor price.
+            </p>
           </div>
         </div>
-        <div class="lg:gap-0 md:gap-0 gap-10 px-6 py-4 lg:px-6 mt-10 md:px-6 pb-5 lg:text-center md:text-center  items-center lg:text-center lg:block md:block flex  rounded-2xl bg-[#3B3B3B]">
-            <img class="m-auto lg:block md:block hidden " src="img/Icon (30).png" alt="">
-            <img class="lg:hidden md:hidden block" src="./img/Icon (32).png" alt="">
+        <div
+          class="lg:gap-0 md:gap-0 gap-10 px-6 py-4 lg:px-6 mt-10 md:px-6 pb-5 lg:text-center md:text-center items-center lg:text-center lg:block md:block flex rounded-2xl bg-[#3B3B3B]"
+        >
+          <img
+            class="m-auto lg:block md:block hidden"
+            src="img/Icon (30).png"
+            alt=""
+          />
+          <img
+            class="lg:hidden md:hidden block"
+            src="./img/Icon (32).png"
+            alt=""
+          />
           <div>
-               <p class="  lg:text-xl text-sm font-bold mb-2 md:text-sm">Start Earning</p>
-            <p class="md:text-xs text-xs lg:text-sm md:w-45 lg:w-60 lg:ml-4">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
+            <p class="lg:text-xl text-sm font-bold mb-2 md:text-sm">
+              Start Earning
+            </p>
+            <p class="md:text-xs text-xs lg:text-sm md:w-45 lg:w-60 lg:ml-4">
+              Choose between auctions and fixed-price listings. Start earning by
+              selling your NFTs or trading others.
+            </p>
           </div>
         </div>
-    </div>
+      </div>
 
+      <!-- Section4 -->
 
-     <!-- Section4 -->
-
-        <div class="lg:max-w-6xl md:max-w-2xl max-w-2xs m-auto pb-10">
-
-            <div class="md:bg-[#3B3B3B] md:py-10 md:px-10  rounded-2xl md:mt-30 mt-10 md:flex gap-15">
+      <div class="lg:max-w-6xl md:max-w-2xl max-w-2xs m-auto pb-10">
+        <div
+          class="md:bg-[#3B3B3B] md:py-10 md:px-10 rounded-2xl md:mt-30 mt-10 md:flex gap-15"
+        >
           <div>
-            <img src="./images/Photo (4).png" alt="" class=" md:h-80 lg:w-130 md:w-140 w-100">
+            <img
+              src="./images/Photo (4).png"
+              alt=""
+              class="md:h-80 lg:w-130 md:w-140 w-100"
+            />
           </div>
           <div class="relative">
-            <h1 class="font-semibold pt-5 lg:text-4xl lg:w-80 md:w-50 md:text-2xl text-2xl text-[#FFFFFF]">Join our weekly digest</h1>
-            <h4 class="font-normal lg:text-xl md:text-base text-[#FFFFFF] lg:w-90 lg:pt-5 md:pt-2">Get exclusive promotions & updates straight to your inbox.</h4>
+            <h1
+              class="font-semibold pt-5 lg:text-4xl lg:w-80 md:w-50 md:text-2xl text-2xl text-[#FFFFFF]"
+            >
+              Join our weekly digest
+            </h1>
+            <h4
+              class="font-normal lg:text-xl md:text-base text-[#FFFFFF] lg:w-90 lg:pt-5 md:pt-2"
+            >
+              Get exclusive promotions & updates straight to your inbox.
+            </h4>
             <div class="lg:mt-10 md:mt-5 mt-10">
-              <input type="text" placeholder="Enter your email here" class="bg-[#FFFFFF] py-4 px-10 md:rounded-xl rounded-full font-normal text-base text-[#2B2B2B]">
-              <button class="bg-[#A259FF] text-[#FFFFFF] py-4 lg:px-5 lg:mt-0 md:mt-5 mt-5 md:px-21 px-20 md:rounded-xl rounded-full lg:absolute md:static left-50">
+              <input
+                type="text"
+                placeholder="Enter your email here"
+                class="bg-[#FFFFFF] py-4 px-10 md:rounded-xl rounded-full font-normal text-base text-[#2B2B2B]"
+              />
+              <button
+                class="bg-[#A259FF] text-[#FFFFFF] py-4 lg:px-5 lg:mt-0 md:mt-5 mt-5 md:px-21 px-20 md:rounded-xl rounded-full lg:absolute md:static left-50"
+              >
                 <i class="fa-regular fa-envelope"></i>
                 Subscribe
               </button>
             </div>
           </div>
         </div>
+      </div>
 
-        </div>
-
-        <!-- /Section4 -->
-
+      <!-- /Section4 -->
     </div>
 
-    <div class="bg-[#3B3B3B] ">
+    <div class="bg-[#3B3B3B]">
       <div class="lg:max-w-5xl md:max-w-2xl max-w-2xs m-auto">
         <div class="lg:flex justify-between py-10">
           <div>
-            <img src="./images/Logo (6).png" alt="">
-            <p class="font-normal text-base text-[#CCCCCC] w-55 mt-5">NFT marketplace UI created with Anima for Figma.</p>
-            <p class="font-normal text-base text-[#CCCCCC] pt-5">Join our community</p>
+            <img src="./images/Logo (6).png" alt="" />
+            <p class="font-normal text-base text-[#CCCCCC] w-55 mt-5">
+              NFT marketplace UI created with Anima for Figma.
+            </p>
+            <p class="font-normal text-base text-[#CCCCCC] pt-5">
+              Join our community
+            </p>
             <div class="text-[#858584] flex gap-3 pt-5 text-xl">
               <i class="fa-brands fa-discord"></i>
               <i class="fa-brands fa-youtube"></i>
@@ -894,23 +1103,40 @@
             <h3 class="font-bold text-xl text-[#FFFFFF] pt-5">Explore</h3>
             <p class="font-normal text-base text-[#CCCCCC] pt-5">Marketplace</p>
             <p class="font-normal text-base text-[#CCCCCC] pt-5">Rankings</p>
-            <p class="font-normal text-base text-[#CCCCCC] pt-5">Connect a wallet</p>
+            <p class="font-normal text-base text-[#CCCCCC] pt-5">
+              Connect a wallet
+            </p>
           </div>
           <div>
-            <h3 class="font-bold text-xl text-[#FFFFFF] pt-5">Join our weekly digest</h3>
-            <p class="font-normal text-base text-[#CCCCCC] lg:w-55 md:w-110 w-70 mt-5">Get exclusive promotions & updates straight to your inbox.</p>
-            <div class="relative mt-5 ">
-              <input type="text" placeholder="Enter your email here" class="bg-[#FFFFFF] px-10 py-4 rounded-2xl font-normal text-base text-[#2B2B2B]">
-              <button class="bg-[#A259FF] md:px-10 px-24 py-4 rounded-2xl md:absolute static left-50 text-[#FFFFFF] font-semibold text-base">
+            <h3 class="font-bold text-xl text-[#FFFFFF] pt-5">
+              Join our weekly digest
+            </h3>
+            <p
+              class="font-normal text-base text-[#CCCCCC] lg:w-55 md:w-110 w-70 mt-5"
+            >
+              Get exclusive promotions & updates straight to your inbox.
+            </p>
+            <div class="relative mt-5">
+              <input
+                type="text"
+                placeholder="Enter your email here"
+                class="bg-[#FFFFFF] px-10 py-4 rounded-2xl font-normal text-base text-[#2B2B2B]"
+              />
+              <button
+                class="bg-[#A259FF] md:px-10 px-24 py-4 rounded-2xl md:absolute static left-50 md:mt-0 mt-5 text-[#FFFFFF] font-semibold text-base"
+              >
                 Subscribe
               </button>
             </div>
           </div>
         </div>
 
-        <div class="h-0.5 lg:w-280 bg-[#858584] "></div>
-        <p class="font-normal text-xs text-[#CCCCCC] py-5">Ⓒ NFT Market. Use this template freely.</p>
+        <div class="h-0.5 lg:w-280 bg-[#858584]"></div>
+        <p class="font-normal text-xs text-[#CCCCCC] py-5">
+          Ⓒ NFT Market. Use this template freely.
+        </p>
       </div>
     </div>
     <!-- /Hulkar1 -->
-</body>
+  </body>
+</html>
