@@ -1,0 +1,14 @@
+.ota {
+    display: flex;
+    padding: 20px;
+    background-color: red;
+    border: 2px solid black;
+}
+.card {
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    border: 2px solid green;
+    width: 100px;
+    border-radius: 10px;
+}
