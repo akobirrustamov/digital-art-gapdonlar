@@ -3,435 +3,470 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
-<body class="bg-[#000] text-[#fff]">
-    <div class="lg:max-w-7xl md:max-w-2xl max-w-2xs flex justify-between m-auto items-center py-6  ">
-        <div>
-            <img class="lg:w-50 md:w-40 w-30" src="./img/logo.png" alt="">
-        </div>
-        <div class="lg:flex gap-4 lg:block md:hidden  hidden ">
+<body>
+    <div class="bg-[#000] text-[#fff] pb-5">
+        <div class="lg:max-w-7xl md:max-w-2xl max-w-2xs flex justify-between m-auto items-center py-6  ">
+            <div>
+                <img class="lg:w-50 md:w-40 w-30" src="./img/logo.png" alt="">
+            </div>
+           <div class="lg:flex gap-4 lg:block md:hidden  hidden ">
             <a class="hover:text-[#A259FF]" href="./index1.html">Marketplace</a>
             <a class="hover:text-[#A259FF]" href="./Create.html">Rankings</a>
             <a class="hover:text-[#A259FF]" href="./Artist.html">Connect a wallet</a>
             <a class="hover:text-[#A259FF]" href="./NFT.html">NET</a>
             <a class="hover:text-[#A259FF]" href="./marketplace.html">Market</a>
-            <a class="hover:text-[#A259FF]" href="./index2.html"></a>
+           <a class="hover:text-[#A259FF]" href="./connect.wallet.html">connect</a>
         </div>
-          <div class="text-[#fff] md:flex flex gap-2 lg:hidden md:block block">
+         <div class="text-[#fff] md:flex flex gap-2 lg:hidden md:block block">
          <div>
-           <a  href="./index2.html"><i class="fa-solid fa-angle-left"></i></a>
+           <a  href="./index1.html"><i class="fa-solid fa-angle-left"></i></a>
          </div>
           <div>
-             <a href="./marketplace.html"><i class="fa-solid fa-angle-right"></i></a>
+             <a href="./Artist.html"><i class="fa-solid fa-angle-right"></i></a>
           </div>            
       </div>
-        <div
-            class="lg:flex items-center gap-2  lg:block md:hidden  hidden  py-3 text-sm px-4 hover:bg-[#A259FF] bg-[#fff] text-[#000] hover:text-[#fff] rounded-xl">
-            <i class="fa-regular fa-user"></i>
-            <p>Sign Up</p>
-        </div>
-        <div class="lg:hidden md:block block">
-            <i class="fa-solid fa-bars-staggered"></i>
-        </div>
-    </div>
-    <!--  -->
-
- <div class="lg:max-w-6xl md:max-w-2xl max-w-2xs mx-auto lg:mt-20 md:mt-15 mt-10">
-
-    <!-- Header -->
-    <div class="mb-8">
-      <h1 class="text-white text-3xl md:text-4xl font-bold mb-2">Top Creators</h1>
-      <p class="text-gray-400 text-sm md:text-base">Check out top ranking NFT artists on the NFT Marketplace.</p>
-    </div>
-
-    <!-- Tabs -->
-    <div class="flex justify-center  lg:gap-40 md:gap-5 gap-0 sm:gap-8 mb-6 border-b border-gray-700">
-      <button  class="tab-btn pb-3 text-xs sm:text-base font-semibold hover:text-white text-[#858584] hover:border-b-2 border-white lg:px-10 md:px-10 px-5"> <p class="lg:block md:block hidden">Today</p> <p class="lg:hidden md:hidden block">1d</p></button>
-      <button  class="tab-btn pb-3 text-xs sm:text-base font-medium text-gray-500 hover:border-b-2 hover:text-gray-300 lg:px-10 md:px-10 px-5"> <p class="lg:block md:block hidden">This Week</p> <p class="lg:hidden md:hidden block">7d</p></button>
-      <button  class="tab-btn pb-3 text-xs sm:text-base font-medium text-gray-500 hover:border-b-2 hover:text-gray-300 lg:px-10 md:px-10 px-5"> <p class="lg:block md:block hidden">This Month</p><p class="lg:hidden md:hidden block">30d</p></button>
-      <button  class="tab-btn pb-3 text-xs sm:text-base font-medium text-gray-500 hover:border-b-2 hover:text-gray-300 lg:px-10 md:px-10 px-5">All Time</button>
-    </div>
-
-    <!-- Table Header -->
-    <div class="hidden border-[#858584] border rounded-2xl sm:grid grid-cols-12 px-4 py-3 px-5  text-gray-500 text-xs uppercase tracking-widest mb-2">
-      <div class="col-span-1">#</div>
-      <div class="col-span-5">Artist</div>
-      <div class="col-span-2 text-center">Change</div>
-      <div class="col-span-2 text-center">NFTs Sold</div>
-      <div class="col-span-2 text-right">Volume</div>
-    </div>
-
-    <!-- Rows -->
-    <div class="flex flex-col gap-3">
-
-      <!-- Row 1 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 border-1  w-5 bg-[#3B3B3B] h-5 text-center rounded-full  text-gray-500 text-sm font-medium"><p>1</p></div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2"> 
-          <!-- Avatar placeholder — replace src with real image -->
-          <img
-            src="./img/Avatar Placeholder (1).png" 
-            alt="Jaydon Ekstrom Bothman"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Jaydon Ekstrom Bothman</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Marcus Saris</span>
-        </div>
-        <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
+            <div class="lg:flex items-center gap-2  lg:block md:hidden  hidden  py-3 text-sm px-4 hover:bg-[#A259FF] bg-[#fff] text-[#000] hover:text-[#fff] rounded-xl">
+                <i class="fa-regular fa-user"></i>
+                <p>Sign Up</p>
+            </div>
+            <div class="lg:hidden md:block block">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
       </div>
-      <!-- Row 2 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">2</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Avatar (9).png "
-            alt="Ruben Carder"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Ruben Carder</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Alfonso Bator</span>
-        </div>
-         <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
+      <div class="lg:max-w-6xl md:max-w-2xl max-w-2xs mt-10 m-auto">
+        <p class="text-4xl font-bold">Top Creators</p>
+        <p class="mt-3 text-sm">Check out top ranking NFT artists on the NFT Marketplace.</p>
       </div>
-
-      <!-- Row 3 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">3</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Avatar (10).png"
-            alt="Alfredo Septimus"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Alfredo Septimus</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Nolan Mango</span>
-        </div>
- <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
+      <div class="lg:max-w-5xl md:max-w-xl max-w-2xs m-auto mt-15 flex justify-between">
+        <div class="hover:border-b-2 lg:text-sm md:text-sm text-xs text-[#858584] hover:text-[#fff] text-center lg:px-8 md:px-8 px-5 py-2 font-bold"><p class="lg:block md:block hidden">Today</p> <p class="lg:hidden md:hidden block">1d</p> </div>
+        <div class="hover:border-b-2 lg:text-sm md:text-sm text-xs text-[#858584] hover:text-[#fff] text-center lg:px-8 md:px-8 px-5 py-2 font-bold"><p class="lg:block md:block hidden">This Week</p> <p class="lg:hidden md:hidden block">7d</p> </div>
+        <div class="hover:border-b-2 lg:text-sm md:text-sm text-xs text-[#858584] hover:text-[#fff] text-center lg:px-8 md:px-8 px-5 py-2 font-bold"><p class="lg:block md:block hidden">This Month</p> <p class="lg:hidden md:hidden block">30d</p> </div>
+        <div class="hover:border-b-2 lg:text-sm md:text-sm text-xs text-[#858584] hover:text-[#fff] text-center lg:px-8 md:px-8 px-5 py-2 font-bold"><p class="lg:block md:block hidden">All Time</p> <p class="lg:hidden md:hidden block">All Time</p> </div>
       </div>
-
-      <!-- Row 4 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">4</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Avatar (11).png"
-            alt="Davis Franci"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Davis Franci</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Nolan Mango</span>  
+      <div class="lg:max-w-6xl md:max-w-2xl max-w-2xs m-auto flex justify-between mt-10 border text-sm rounded-3xl text-[#858584] py-3 px-8">
+        <div class="flex gap-2">
+            <p>#</p>
+            <p>Artist</p>
         </div>
- <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-
-      <!-- Row 5 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">5</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Avatar (12).png"
-            alt="Livia Rosser"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Livia Rosser</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Miracle Gouse</span>
+        <div class="flex gap-8">
+            <p>Change</p>
+            <p class="lg:block md:block hidden">NFTs Sold</p>
+            <p class="lg:block md:hidden hidden">Volume</p>
         </div>
-         <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
       </div>
-
-    </div>
-    <div class="flex flex-col gap-3 mt-3">
-
-      <!-- Row 1 -->
-      <div class="bg-[#2a2a2a]   rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 border-1  w-5 bg-[#3B3B3B] h-5 text-center rounded-full  text-gray-500 text-sm font-medium"><p>6</p></div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2"> 
-          <!-- Avatar placeholder — replace src with real image -->
-          <img
-            src="./img/Artist Avatar (4).png" 
-            alt="Jaydon Ekstrom Bothman"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Kianna Donin</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Alena Septimus</span>
+      <div class="lg:max-w-7xl md:max-w-2xl max-w-2xs m-auto mt-10">
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">1</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (15).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Jaydon Ekstrom Bothman</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Marcus Saris</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Zain Dokidis</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F]">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
-        <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-      <!-- Row 2 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">7</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Avatar (13).png "
-            alt="Ruben Carder"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Phillip Lipshutz</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Desirae Lipshutz</span>
+        <div class="  flex  justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">2</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (17).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Ruben Carder</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Alfonso Bator</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Ruben Vetrovs</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-21">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
-         <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-
-      <!-- Row 3 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">8</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Artist Avatar (5).png"
-            alt="Alfredo Septimus"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Maria Rosser</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Paityn Kenter</span>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">3</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (18).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Alfredo Septimus</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Nolan Mango</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Maren Franci</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-14">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
- <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-
-      <!-- Row 4 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">9</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Avatar (14).png"
-            alt="Davis Franci"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Kianna Stanton</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Alena Vaccaro</span>  
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">4</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Avatar (18).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Davis Franci</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Marcus Saris</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Zain Dokidis</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-23">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
- <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-
-      <!-- Row 5 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">10</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Artist Avatar (6).png"
-            alt="Livia Rosser"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Angel Lubin</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Randy Carder</span>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">5</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (19).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Livia Rosser</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Miracle Gouse</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Talan Korsgaard</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-22">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
-         <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-
-    </div>
-     <div class="flex flex-col gap-3 mt-3">
-
-      <!-- Row 1 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 border-1  w-5 bg-[#3B3B3B] h-5 text-center rounded-full  text-gray-500 text-sm font-medium"><p>11</p></div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2"> 
-          <!-- Avatar placeholder — replace src with real image -->
-          <img
-            src="./img/Artist Avatar (7).png" 
-            alt="Jaydon Ekstrom Bothman"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Allison Torff</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Hanna Culhane</span>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">6</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (20).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Kianna Donin</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Alena Septimus</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Talan Korsgaard</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-17">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
-        <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-      <!-- Row 2 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">12</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Artist Avatar (8).png "
-            alt="Ruben Carder"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Davis Workman</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Jocelyn Workman</span>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">7</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (21).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Phillip Lipshutz</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Desirae Lipshutz</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Haylie Diass</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-12">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
-         <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-
-      <!-- Row 3 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">13</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Artist Avatar (9).png"
-            alt="Alfredo Septimus"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Lindsey Lipshutz</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Desirae Septimus</span>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">8</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Avatar (19).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Maria Rosser</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Paityn Kenter</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Erin Siphron</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-16">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
- <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-
-      <!-- Row 4 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">14</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Artist Avatar (10).png"
-            alt="Davis Franci"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Randy Carder</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Ahmad Franci</span>  
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">9</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (22).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Kianna Stanton</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Alena Vaccaro</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Erin Siphron</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-13">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
- <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-
-      <!-- Row 5 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">15</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Avatar (15).png"
-            alt="Livia Rosser"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Lydia Culhane</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Maria Bergson</span>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">10</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Avatar (20).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Angel Lubin</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Randy Carder</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Cristofer Levin</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-18">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
-         <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-
-    </div>
-     <div class="flex flex-col gap-3 mt-3   ">
-
-      <!-- Row 1 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 border-1  w-5 bg-[#3B3B3B] h-5 text-center rounded-full  text-gray-500 text-sm font-medium"><p>16</p></div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2"> 
-          <!-- Avatar placeholder — replace src with real image -->
-          <img
-            src="./img/Artist Avatar (11).png" 
-            alt="Jaydon Ekstrom Bothman"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Jaydon Ekstrom Bothman</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Marcus Saris</span>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">11</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (23).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Allison Torff</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Hanna Culhane</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Alena Schleifer</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-17">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
-        <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-      <!-- Row 2 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">17</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Avatar (16).png "
-            alt="Ruben Carder"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Ruben Carder</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Alfonso Bator</span>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">12</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (24).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Davis Workman</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Jocelyn Workman</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Dulce Vetrovs</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-10">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
-         <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-
-      <!-- Row 3 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">18</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Avatar (17).png"
-            alt="Alfredo Septimus"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Alfredo Septimus</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Nolan Mango</span>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">13</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (26).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Lindsey Lipshutz</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Desirae Septimus</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Nolan Siphron</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-8">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
- <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-
-      <!-- Row 4 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">19</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Artist Avatar (13).png"
-            alt="Davis Franci"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Davis Franci</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Nolan Mango</span>  
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">14</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (27).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Randy Carder</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Ahmad Franci</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Omar Stanton</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-13">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
- <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
-      </div>
-
-      <!-- Row 5 -->
-      <div class="bg-[#2a2a2a] rounded-2xl px-4 py-4 grid grid-cols-12 items-center">
-        <div class="col-span-1 w-5 bg-[#3B3B3B] h-5 text-center rounded-full text-gray-500 text-sm font-medium">20</div>
-        <div class="col-span-6 sm:col-span-5 flex items-center gap-2">
-          <img
-            src="./img/Avatar (14).png"
-            alt="Livia Rosser"
-            class="w-10 h-10 rounded-full object-cover border-2 border-[#3a3a3a]"
-          />
-          <span class="text-white font-semibold text-sm sm:text-base lg:block md:hidden hidden">Livia Rosser</span>
-           <span class="text-white font-semibold lg:text-sm md:text-sm text-xs sm:text-base lg:hidden md:block block">Miracle Gouse</span>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">15</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (28).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Lydia Culhane</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Maria Bergson</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Omar Lipshutz</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-13">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
         </div>
-         <div class="col-span-2 text-center text-green-400 text-sm font-medium lg:block md:block hidden">+1.41%</div>
-        <div class="hidden sm:block col-span-2 text-center text-gray-300 text-sm lg:block md:hidden hidden">602</div>
-        <div class="col-span-3 sm:col-span-2 text-right text-gray-300 lg:text-sm md:text-sm text-xs">12.4 ETH</div>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">16</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Avatar (22).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Rayna Bator</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Ahmad Geidt</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Terry Donin</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-16">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
+        </div>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">17</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (29).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Jocelyn Westervelt</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Skylar Mango</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Erin Botosh</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-4">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
+        </div>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">18</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (15).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Marilyn Torff</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Rayna Geidt</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Cheyenne Rhiel </p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-13">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
+        </div>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">19</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Artist Avatar (30).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Skylar Levin</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Marley Rosser</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Jaxson Vaccaro</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-14">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
+        </div>
+        <div class="  flex justify-between items-center px-4 mt-5 py-2 rounded-2xl bg-[#3B3B3B]">
+            <div class="flex items-center gap-2">
+                <p class="  w-6 h-6 text-center rounded-full bg-[#2B2B2B]">20</p>
+                 <div class="flex items-center gap-2">
+                    <img src="./img/Avatar (23).png" alt="">
+                    <p class="font-bold lg:block md:hidden hidden">Terry Dorwart</p>
+                      <p class="font-bold lg:hidden md:block hidden text-sm">Terry Dorwart</p>
+                       <p class="font-bold lg:hidden md:hidden block text-xs">Jordyn Dias</p>
+                 </div>
+            </div>
+            <div>
+                <p class="lg:block md:block hidden text-[#00AC4F] lg:ml-10">+1.41%</p>
+            </div>
+            <div>
+                <p class="lg:block md:hidden hidden">602</p>
+            </div>
+            <div>
+                <p class="lg:text-lg md:text-sm text-xs">12.4 ETH</p>
+            </div>
+        </div>
       </div>
-
-    </div>
-  </div>
-
-
-
-
-
-
-    <!--  -->
-     <div class="bg-[#3B3B3B] mt-20 py-15 px-5">
+      <div class="bg-[#000] mt-5  py-15 px-5">
         <div class="lg:max-w-6xl md:max-w-2xl m-auto lg:flex justify-between ">
            <div>
                <div class="flex items-center gap-2">
-                <img src="./img/Logo (13).png " alt="">
+                <img src="./img/Logo (14).png " alt="">
                 <img class="w-40" src="./img/yozuv.png" alt="">
                </div>
                <p class="text-[#CCCCCC] mt-8">NFT marketplace UI created <br> with Anima for Figma.</p>
@@ -463,9 +498,11 @@
             </div>
            </div>
         </div>
-        <div class="border text-[#858584] mt-20"></div>
+       <div class="lg:max-w-6xl md:max-w-2xl max-w-2xs m-auto">
+          <div class="border text-[#858584] mt-20"></div>
         <p class="text-[#CCCCCC] mt-8 lg:text-lg md:text-lg text-sm">Ⓒ NFT Market. Use this template freely.</p>
+       </div>
+    </div>hhhuh
     </div>
 </body>
 </html>
- 
